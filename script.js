@@ -7,7 +7,7 @@ const apiUrl =
 
 async function fetchData() {
   fetch(
-    "https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=b99bfac3612f40f6bb28dfab990cde8d"
+    "https://newsapi.org/v2/everything?q=film&from=2024-09-02&sortBy=publishedAt&apiKey=b99bfac3612f40f6bb28dfab990cde8d"
   )
     .then(res => res.json())
     .then(data => console.log(data));
